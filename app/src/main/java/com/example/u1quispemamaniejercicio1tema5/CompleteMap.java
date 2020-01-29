@@ -81,7 +81,7 @@ public class CompleteMap extends FragmentActivity implements OnMapReadyCallback,
         btncentrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mapa.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-18.013240, -70.250091), 13));
+                mapa.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-18.007633, -70.239271), 14));
             }
         });
 
@@ -260,7 +260,9 @@ public class CompleteMap extends FragmentActivity implements OnMapReadyCallback,
 
     }
 
-    public void centrar0(View view) {
+
+
+    public void CENTRARTOTAL(View view){
         mapa.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-18.007633, -70.239271), 14));
 
     }
