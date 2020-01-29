@@ -89,7 +89,7 @@ public class CompleteMap extends FragmentActivity implements OnMapReadyCallback,
             @Override
             public void onClick(View view) {
 
-                mapa.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-18.009282, -70.242908), 20));
+                mapa.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-18.009333, -70.242931), 20));
                 CameraPosition position = mapa.getCameraPosition();
                 float zoom = position.zoom;
                 mapa.addMarker(new MarkerOptions()
@@ -104,7 +104,7 @@ public class CompleteMap extends FragmentActivity implements OnMapReadyCallback,
         btnposgrado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mapa.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-18.005058, -70.235099), 18));
+                mapa.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-18.005129, -70.235149), 18));
                 mapa.addMarker(new MarkerOptions()
                         .position(mapa.getCameraPosition().target)
                         .icon(BitmapDescriptorFactory.fromResource(R.mipmap.marker_20))
