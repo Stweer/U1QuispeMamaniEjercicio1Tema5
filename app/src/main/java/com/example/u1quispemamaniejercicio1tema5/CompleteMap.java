@@ -26,29 +26,17 @@ import java.util.List;
 
 public class CompleteMap extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnMapClickListener, GoogleMap.OnInfoWindowLongClickListener {
     GoogleMap mapa;
-    LatLng ubicacion_rectorado;
-    LatLng ubicacion_rectorado_1;
-    LatLng ubicacion_rectorado_2;
-
-    LatLng ubicacion_campus;
-    LatLng ubicacion_campus_1;
-    LatLng ubicacion_campus_2;
-
-
-    LatLng ubicacion_admision;
-    LatLng ubicacion_admision_1;
-    LatLng ubicacion_admision_2;
-
-    LatLng ubicacion_posgrado;
-    LatLng ubicacion_posgrado_1;
-    LatLng ubicacion_posgrado_2;
+    LatLng ubicacion_rectorado ,ubicacion_rectorado_1 ,ubicacion_rectorado_2;
+    LatLng ubicacion_campus, ubicacion_campus_1,ubicacion_campus_2;
+    LatLng ubicacion_admision,ubicacion_admision_1,ubicacion_admision_2;
+    LatLng ubicacion_posgrado,ubicacion_posgrado_1,ubicacion_posgrado_2;
 
     Polygon polygon_rectorado = null;
     Polygon polygon_campus = null;
     Polygon polygon_admision = null;
     Polygon polygon_posgrado = null;
 
-    //Latitud
+    //Latitudes en Listas
     List<LatLng> latLngList = new ArrayList<>();
     List<Marker> markerList = new ArrayList<>();
 
@@ -62,6 +50,7 @@ public class CompleteMap extends FragmentActivity implements OnMapReadyCallback,
     List<Marker> markerListPosgrado = new ArrayList<>();
     ArrayList<Marker> markers = new ArrayList<>();
 
+    // Botones de utilizacion
     Button btncentrar, btnposgrado, btnrectorado, btnadmision, btncampus;
 
     @Override
@@ -141,7 +130,7 @@ public class CompleteMap extends FragmentActivity implements OnMapReadyCallback,
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        //Rectorado
+        //Ubicacion de rectorado con sus putos
         mapa = googleMap;
         ubicacion_rectorado = new LatLng(-18.009265, -70.242981);
         ubicacion_rectorado_1 = new LatLng(-18.009265, -70.242854);
@@ -161,9 +150,9 @@ public class CompleteMap extends FragmentActivity implements OnMapReadyCallback,
         markerList.add(markerrectorado1);
         markerList.add(markerrectorado2);
 
-        //Marker encerrado
+        //Marker encerrado con ubicacion respectiva
 
-        //Campus
+        //Ubicacion de Campus
 
         ubicacion_campus = new LatLng(-18.005674, -70.225914);
         ubicacion_campus_1 = new LatLng(-18.005159, -70.225230);
@@ -183,7 +172,7 @@ public class CompleteMap extends FragmentActivity implements OnMapReadyCallback,
         markerListCampus.add(markercampus2);
         markerListCampus.add(markercampus1);
 
-        //Admision
+        //Ubicacion de Admision
 
         ubicacion_admision = new LatLng(-18.013515, -70.250327);
         ubicacion_admision_1= new LatLng(-18.013565, -70.250213);
@@ -202,7 +191,7 @@ public class CompleteMap extends FragmentActivity implements OnMapReadyCallback,
         markerListAdmision.add(markeradmision2);
         markerListAdmision.add(markeradmision1);
 
-        //Posgrado
+        //Ubicacion Posgrado
 
         ubicacion_posgrado = new LatLng(-18.005197, -70.235027);
         ubicacion_posgrado_1= new LatLng(-18.005130, -70.235448);
