@@ -94,9 +94,9 @@ public class CompleteMap extends FragmentActivity implements OnMapReadyCallback,
                 float zoom = position.zoom;
                 mapa.addMarker(new MarkerOptions()
                         .position(mapa.getCameraPosition().target)
-                        .icon(BitmapDescriptorFactory.fromResource(R.mipmap.construccion))
-                        .title("Rectorado")
-                        .snippet("Rectorado"));
+                        .icon(BitmapDescriptorFactory.fromResource(R.mipmap.marker_20))
+                        .title("Rectorado"))
+                        ;
 
             }
         });
@@ -107,9 +107,9 @@ public class CompleteMap extends FragmentActivity implements OnMapReadyCallback,
                 mapa.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-18.005058, -70.235099), 18));
                 mapa.addMarker(new MarkerOptions()
                         .position(mapa.getCameraPosition().target)
-                        .icon(BitmapDescriptorFactory.fromResource(R.mipmap.construccion))
-                        .title("Posgrado")
-                        .snippet("Posgrado"));
+                        .icon(BitmapDescriptorFactory.fromResource(R.mipmap.marker_20))
+                        .title("Posgrado"))
+                        ;
             }
         });
 
@@ -119,10 +119,9 @@ public class CompleteMap extends FragmentActivity implements OnMapReadyCallback,
                 mapa.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-18.013522, -70.250260), 20));
                 mapa.addMarker(new MarkerOptions()
                         .position(mapa.getCameraPosition().target)
-                        .icon(BitmapDescriptorFactory.fromResource(R.mipmap.construccion))
-                        .title("Admision")
-                        .snippet("Admision"));
-                //.snippet("https://www.google.com/maps/place/Instituto+Telesup/@-18.0134241,-70.2502144,21z/data=!4m5!3m4!1s0x915acf65a8f8c66d:0x2aa34c7bd8c6ac97!8m2!3d-18.0135324!4d-70.2502479"));
+                        .icon(BitmapDescriptorFactory.fromResource(R.mipmap.marker_20))
+                        .title("Admision"))
+                        ;
             }
         });
 
@@ -132,9 +131,9 @@ public class CompleteMap extends FragmentActivity implements OnMapReadyCallback,
                 mapa.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-18.005694, -70.225477), 18));
                 mapa.addMarker(new MarkerOptions()
                         .position(mapa.getCameraPosition().target)
-                        .icon(BitmapDescriptorFactory.fromResource(R.mipmap.construccion))
-                        .title("Campus")
-                        .snippet("Campus"));
+                        .icon(BitmapDescriptorFactory.fromResource(R.mipmap.marker_20))
+                        .title("Campus"))
+                        ;
 
             }
         });
@@ -218,9 +217,9 @@ public class CompleteMap extends FragmentActivity implements OnMapReadyCallback,
         latLngListPosgrado.add(ubicacion_posgrado);
         latLngListPosgrado.add(ubicacion_posgrado_1);
         latLngListPosgrado.add(ubicacion_posgrado_2);
-        markerListPosgrado.add(markeradmision);
-        markerListPosgrado.add(markeradmision2);
-        markerListPosgrado.add(markeradmision1);
+        markerListPosgrado.add(markerpos);
+        markerListPosgrado.add(markerpos2);
+        markerListPosgrado.add(markerpos1);
 
 
         if (!latLngList.isEmpty()) {
@@ -260,6 +259,12 @@ public class CompleteMap extends FragmentActivity implements OnMapReadyCallback,
     public void onInfoWindowLongClick(Marker markerListCampus) {
 
     }
+
+    public void centrar0(View view) {
+        mapa.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-18.007633, -70.239271), 14));
+
+    }
+
 
 
     @Override public void onMapClick(LatLng puntoPulsado) {
