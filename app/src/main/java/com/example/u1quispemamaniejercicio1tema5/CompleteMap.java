@@ -227,28 +227,28 @@ public class CompleteMap extends FragmentActivity implements OnMapReadyCallback,
             PolygonOptions polygonOptions = new PolygonOptions()
                     .addAll(latLngList).clickable(true);
             polygon_rectorado = mapa.addPolygon(polygonOptions);
-            polygon_rectorado.setStrokeColor(Color.rgb(160, 60, 40));
+            polygon_rectorado.setStrokeColor(Color.rgb(255, 0, 0));
         }
 
         if (!latLngListCampus.isEmpty()) {
             PolygonOptions polygonOptions = new PolygonOptions()
                     .addAll(latLngListCampus).clickable(true);
             polygon_campus = mapa.addPolygon(polygonOptions);
-            polygon_campus.setStrokeColor(Color.rgb(160, 60, 40));
+            polygon_campus.setStrokeColor(Color.rgb(255, 0, 0));
         }
 
         if (!latLngListAdmision.isEmpty()) {
             PolygonOptions polygonOptions = new PolygonOptions()
                     .addAll(latLngListAdmision).clickable(true);
             polygon_admision = mapa.addPolygon(polygonOptions);
-            polygon_admision.setStrokeColor(Color.rgb(160, 60, 40));
+            polygon_admision.setStrokeColor(Color.rgb(255, 0, 0));
         }
 
         if (!latLngListPosgrado.isEmpty()) {
             PolygonOptions polygonOptions = new PolygonOptions()
                     .addAll(latLngListPosgrado).clickable(true);
             polygon_posgrado = mapa.addPolygon(polygonOptions);
-            polygon_posgrado.setStrokeColor(Color.rgb(160, 60, 40));
+            polygon_posgrado.setStrokeColor(Color.rgb(255, 0, 0));
         }
 
 
