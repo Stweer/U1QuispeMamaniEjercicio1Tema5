@@ -25,7 +25,7 @@
             android:background="@color/colorAccent"
             android:textColor="#fff"
             android:layout_gravity="center"
-            android:onClick="miubicacion"
+            android:onClick="centrar"
             android:text="CENTRAR"/>
 
     </LinearLayout>
@@ -43,7 +43,7 @@
             android:background="@android:color/background_dark"
             android:textColor="#fff"
             android:layout_gravity="center"
-            android:onClick="mifusedlocation"
+            android:onClick="postgrado"
             android:text="1 POSTGRADO"/>
         <Button
             android:id="@+id/btn2"
@@ -53,7 +53,7 @@
             android:background="@android:color/background_dark"
             android:textColor="#fff"
             android:layout_gravity="center"
-            android:onClick="mifusedlocationClient"
+            android:onClick="campus"
             android:text="2 CAMPUS"/>
         <Button
             android:id="@+id/btn3"
@@ -63,17 +63,17 @@
             android:background="@android:color/background_dark"
             android:textColor="#fff"
             android:layout_gravity="center"
-            android:onClick="mifusedlocationClient"
+            android:onClick="admision"
             android:text="3 ADMISION"/>
         <Button
-            android:id="@+id/btN4"
+            android:id="@+id/btn4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:color/background_dark"
             android:textColor="#fff"
             android:layout_gravity="center"
-            android:onClick="mifusedlocationClient"
+            android:onClick="rectorado"
             android:text="4 RECTORADO"/>
     </LinearLayout>
 </LinearLayout>
